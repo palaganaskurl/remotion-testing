@@ -8,9 +8,19 @@ const Editor: React.FC = () => {
     {
       name: "Track 1",
       items: [
-        { type: "text", text: "TESTx", durationInFrames: 10, from: 0 } as Item,
+        {
+          type: "text",
+          text: "TESTx",
+          durationInFrames: 10 * 30,
+          from: 0 * 30,
+        } as Item,
         // { type: "text", text: "TESTx" } as Item,
-        { type: "solid", color: "red", durationInFrames: 10, from: 4 } as Item,
+        {
+          type: "solid",
+          color: "red",
+          durationInFrames: 10 * 30,
+          from: 4 * 30,
+        } as Item,
       ],
     },
     { name: "Track 2", items: [] },
